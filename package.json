@@ -1,0 +1,32 @@
+{
+  "name": "mooxe-docker-moonscript",
+  "version": "0.0.0",
+  "description": "docker image for moonscript application of mooxe",
+  "author": "FooTearth <footearth@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/mooxe-docker-moonscript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/mooxe-docker-moonscript/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/mooxe-docker-moonscript",
+  "Keywords": [
+    "docker",
+    "daocloud",
+    "image"
+  ],
+  "bin": {},
+  "scripts": {
+    "build": "docker build -t mooxe/moonscript .",
+    "rebuild": "docker build --no-cache -t mooxe/moonscript .",
+    "in": "docker run --name=moonscript --rm -ti -v `pwd`:/root/moonscript mooxe/moonscript /bin/bash",
+    "push": "docker push mooxe/moonscript",
+    "test": "echo 'hello'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "shelljs": "^0.4.0"
+  }
+}
