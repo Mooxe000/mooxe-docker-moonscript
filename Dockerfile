@@ -16,4 +16,5 @@ RUN \
   unzip
 
 RUN \
-  luarocks install moonscript
+  luarocks install moonscript && \
+  luarocks install moor
